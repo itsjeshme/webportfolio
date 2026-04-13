@@ -1,0 +1,256 @@
+/*================== General ======================*/
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    font-family: "Zilla Slab", sans serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: #F8F8F7;
+    repeating-linear-gradient: 5px;
+  }
+
+  h2, h3, h4, h5, h6 {
+    color: #934B19;
+  }
+
+  h3 {
+    font-weight: bold
+  }
+
+  p {
+    color: #934B19;
+  }
+
+  .card:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+  }
+/*==================== End =======================*/
+
+/*=================== Navbar =====================*/
+  .navbar {
+    height: 3.5rem;
+    background-color: #F1E7D4 !important;
+    font-weight: bold;
+  }
+
+  .navbar-collapse {
+    background-color: #F1E7D4;
+    z-index: 100;
+  }
+
+  nav img {
+    height: 30px;
+  }
+
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+/*==================== End =======================*/
+
+/*================== Landing =====================*/
+  #landing .container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #landing img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #landing .cover {
+    position: absolute;
+    bottom: 5vh;
+    left: 20px; 
+    text-align: justify-content;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 90vw;
+    padding: 10px;
+    font-size: clamp(1.2rem, 2.5vw, 1rem);
+    line-height: 1;
+  }
+
+  .landing-text:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .landing-text:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+/*==================== End =======================*/
+
+/*=================== Work =======================*/
+  #work , #affiliations {
+    background: #F1E7D4 !important;
+    border: 1px solid var(--border);
+    text-align: center;
+  }
+
+  #work h2 , #affiliations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem; 
+  }
+
+  #work .grid , #affiliations .grid {
+    display: grid; 
+    gap: rem;
+    grid-template-columns: repeat(3, calc(((90vw - 4rem)/3)));
+    grid-template-rows: auto;
+  }
+
+  #work .card , #affiliations .card {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px; 
+    border-radius: 12px; 
+    border: 1px solid; 
+    border-color: #67222B;
+    transition: border-color 0.3s;
+    align-items: center;
+    width: 30%;
+    height: 35vh !important;
+  }
+
+  #work .card h5 , #affiliations .card h5 { 
+    margin-bottom: 1rem; 
+    color: var(--text-main); 
+  }
+  .card img {
+    margin-top: 1rem;
+    max-height: 80px;
+    max-width: 120px;
+    padding-block: 12px;
+
+  }
+/*==================== End =======================*/
+
+/*================== Projects ====================*/
+  #projects {
+    text-align: center;
+    align-items: center;
+  }
+
+  #projects .grid-container {
+    display: grid;
+    place-content: center;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, calc(((90vw - 4rem)/3)));
+    grid-template-rows: auto;
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+
+  #projects .grid-container .card {
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+  }
+/*==================== End =======================*/
+
+/*=================== Tools ======================*/
+  #tools {
+    display: block;
+    min-height: 65vh;
+    min-width: 90vw;
+    text-align: center;
+    align-items: center;
+  }
+  #tools .grid-container {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-gap: 1rem;
+    background-image: url('./images/blueweave.png');
+    background-repeat: repeat;
+    grid-template-columns: repeat(4, calc(((80vw - 2rem)/4)));
+    grid-template-rows: auto;
+    background-size: 40vw;
+    padding: 50px;
+    align-items: center;
+    margin: 20px
+  }
+  #tools .card {
+    display: inline-block;
+    border-radius: 45px;
+    place-items: center;
+    opacity: 0.8;
+    width: 15vw;
+    height: 35vh !important;
+    margin: 10px;
+  }
+
+/*==================== End =======================*/
+
+/*================= Affiliations =================*/
+  #affiliations .card {
+    background: #321200;
+    color: #f0f0f0;
+    opacity: 0.9
+  }
+/*==================== End =======================*/
+
+/*================== Contact =====================*/
+  #gmap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  #contact img {
+    height: 30px;
+  }
+
+  #form {
+    background-color: #1e3a5f;
+  }
+
+  .socials {
+    text-align: center;
+  }
+
+  form label.d-block {
+    color: #f0f0f0;
+  }
+/*==================== End =======================*/
+
+/*=================== Extra ======================*/
+  #backtotop img {
+    position: fixed;
+    bottom: 8px;
+    left: 10px;
+    z-index: 99;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+  }
+/*==================== End =======================*/
+
+/*=================== Footer =====================*/
+  #footer {
+    text-align: center;
+    background: #321200;
+    line-height: 1.1;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+  }
+/*==================== End =======================*/
