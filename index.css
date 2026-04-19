@@ -14,15 +14,14 @@
     padding: 0;
     scroll-behavior: smooth;
     background: #F8F8F7;
-    repeating-linear-gradient: 5px;
   }
 
-  h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6 {
     color: #934B19;
+    text-align: center;
   }
 
   h3 {
-    font-weight: bold
   }
 
   p {
@@ -32,7 +31,7 @@
   .card:hover {
     background-color: #f0f0f0;
     transform: scale(1.02);
-    transition: transform 0.2s ease;
+    transition: transform 0.4s ease;
   }
 /*==================== End =======================*/
 
@@ -61,7 +60,6 @@
 /*================== Landing =====================*/
   #landing .container {
     position: relative;
-    display: inline-block;
     width: 100%;
   }
 
@@ -73,14 +71,13 @@
 
   #landing .cover {
     position: absolute;
-    bottom: 5vh;
-    left: 20px; 
+    bottom: 1vh;
+    left: 17px; 
     text-align: justify-content;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     background-size: 90vw;
     padding: 10px;
-    font-size: clamp(1.2rem, 2.5vw, 1rem);
     line-height: 1;
   }
 
@@ -98,120 +95,139 @@
 /*==================== End =======================*/
 
 /*=================== Work =======================*/
-  #work , #affiliations {
+  #work {
     background: #F1E7D4 !important;
-    border: 1px solid var(--border);
     text-align: center;
+    max-width: 1250px;
   }
 
-  #work h2 , #affiliations h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem; 
+  #work .container {
+    max-width: 1000px;
+    height: auto;
   }
 
-  #work .grid , #affiliations .grid {
-    display: grid; 
-    gap: rem;
-    grid-template-columns: repeat(3, calc(((90vw - 4rem)/3)));
-    grid-template-rows: auto;
+  #work h2 {
+    font-style: italic;
   }
 
-  #work .card , #affiliations .card {
-    display: inline-block;
-    vertical-align: top;
-    padding: 5px; 
-    border-radius: 12px; 
-    border: 1px solid; 
-    border-color: #67222B;
-    transition: border-color 0.3s;
-    align-items: center;
-    width: 30%;
-    height: 35vh !important;
+  #work .container > .row:nth-of-type(1) > div:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
   }
 
-  #work .card h5 , #affiliations .card h5 { 
-    margin-bottom: 1rem; 
-    color: var(--text-main); 
+  #work .container > .row:nth-of-type(1) > div {
+    max-width: 30vw;
+    border: 2px solid #934B19;
+    border-radius: 25px;
   }
-  .card img {
-    margin-top: 1rem;
-    max-height: 80px;
-    max-width: 120px;
-    padding-block: 12px;
 
+  #work .row:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+  }
+
+  #work .row:nth-of-type(1) > div {
+    background: #F8F8F7;
+  }
+
+  #work .row:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+  }
+
+  #work .container > .row:nth-of-type(1) img {
+    max-height: 150px;
+    width: auto;
+    display: grid
+    margin-bottom: none;
+  }
+
+  #work .container > .row:nth-of-type(2) img {
+    max-height: 120px;
+    width: auto;
   }
 /*==================== End =======================*/
 
 /*================== Projects ====================*/
-  #projects {
-    text-align: center;
-    align-items: center;
-  }
-
-  #projects .grid-container {
-    display: grid;
-    place-content: center;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(3, calc(((90vw - 4rem)/3)));
-    grid-template-rows: auto;
-    margin: 1rem 0;
-    padding: 0 1rem;
-  }
-
-  #projects .grid-container .card {
-    padding: 10px;
-    border-radius: 10px;
-    display: grid;
-    place-items: center;
-
-  }
+  #projects .container {
+    max-width: 75vw;
+  } 
 
   #projects img {
-    width: 100%;
-    height: 100%;
-   object-fit: contain;
+    min-height: 10px;
+    width: auto;
+  }
+
+  #projects .row {
+    text-align: center;
+    border: 1px;
+  } 
+
+  #projects h1 {
+    text-align: center;
   }
 /*==================== End =======================*/
 
 /*=================== Tools ======================*/
   #tools {
-    display: block;
-    min-height: 65vh;
-    min-width: 90vw;
-    text-align: center;
     align-items: center;
-  }
-  #tools .grid-container {
-    display: grid;
-    place-content: center;
-    place-items: center;
-    grid-gap: 1rem;
-    background-image: url('./images/blueweave.png');
-    background-repeat: repeat;
-    grid-template-columns: repeat(4, calc(((80vw - 2rem)/4)));
-    grid-template-rows: auto;
-    background-size: 40vw;
-    padding: 50px;
-    align-items: center;
-    margin: 20px
-  }
-  #tools .card {
-    display: inline-block;
-    border-radius: 45px;
-    place-items: center;
-    opacity: 0.8;
-    width: 15vw;
-    height: 35vh !important;
-    margin: 10px;
   }
 
+  #tools .row > * {
+    border: 2px solid white;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    max-width: 230px;
+    backdrop-filter: blur(10px);
+  }
+
+  #tools .container {
+    background-image: url("./images/blueweave3.png");
+    position: relative;
+    text-align: justify-content;
+    background-size: 100vw;
+    padding: 10px;
+    line-height: 1;
+  }
+
+  #tools .container img {
+    max-height: 100%;
+    width: auto;
+  }
+
+  #tools h5, #tools h1 {
+    color: #F8F8F7 !important;
+  }
+
+  #tools .justify-content-center > img {
+    max-width: 200px;
+    height: auto;
+    opacity: none !important;
+  }
 /*==================== End =======================*/
 
 /*================= Affiliations =================*/
-  #affiliations .card {
-    background: #321200;
-    color: #f0f0f0;
-    opacity: 0.9
+  #affiliations {
+    text-align: center;
+    max-width: 500px;
+  }
+
+  #affiliations .container {
+    max-height: 380px;
+    justify-content: center;
+    background: #F8F8F7 !important;
+    border: 5px solid #934B19;
+    border-radius: 25px;
+  }
+
+  #affiliations .row:nth-of-type(1) img {
+    max-width: 350px;
+    width: auto;
+  }
+
+  #affiliations .row:nth-of-type(2) img {
+    height: 140px;
+    width: auto;
   }
 /*==================== End =======================*/
 
@@ -220,7 +236,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 15px;
   }
 
   #contact img {
@@ -246,9 +261,13 @@
     bottom: 8px;
     left: 10px;
     z-index: 99;
-    border-radius: 10px;
     width: 40px;
     height: 40px;
+    cursor: pointer;
+  }
+
+  #backtotop:hover {
+    background-color: #0056b3;
   }
 /*==================== End =======================*/
 
