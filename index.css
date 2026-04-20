@@ -76,10 +76,10 @@
     text-align: justify-content;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    background-size: 90vw;
+    background-size: 88vw;
     padding: 10px;
     line-height: 1;
-    max-width: 97vw;
+    max-width: 80vw;
   }
 
   .landing-text:nth-of-type(1) {
