@@ -218,7 +218,7 @@
 
   #affiliations .container {
     display: relative;
-    max-height: 380px;
+    max-width: 380px;
     justify-content: center;
     background: #F8F8F7 !important;
     border: 5px solid #934B19;
