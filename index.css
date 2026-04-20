@@ -79,6 +79,7 @@
     background-size: 90vw;
     padding: 10px;
     line-height: 1;
+    max-width: 97vw;
   }
 
   .landing-text:nth-of-type(1) {
@@ -185,7 +186,7 @@
   }
 
   #tools .container {
-    background-image: url("./images/blueweave3.png");
+    background-image: url("./images/blueweave3sm.png");
     position: relative;
     text-align: justify-content;
     background-size: 100vw;
@@ -213,12 +214,12 @@
   #affiliations {
     text-align: center;
     max-width: 500px;
-    min-width:400px;
+    min-width:350px;
   }
 
   #affiliations .container {
     display: relative;
-    max-width: 380px;
+    max-width: 360px;
     justify-content: center;
     background: #F8F8F7 !important;
     border: 5px solid #934B19;
@@ -226,12 +227,12 @@
   }
 
   #affiliations .row:nth-of-type(1) img {
-    max-width: 300px;
+    max-width: 290px;
     height: auto;
   }
 
   #affiliations .row:nth-of-type(2) img {
-    max-width: 100px;
+    max-width: 90px;
     height: auto;
   }
 
@@ -270,10 +271,6 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
-  }
-
-  #backtotop:hover {
-    background-color: #0056b3;
   }
 /*==================== End =======================*/
 
