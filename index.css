@@ -213,13 +213,11 @@
 /*================= Affiliations =================*/
   #affiliations {
     text-align: center;
-    max-width: 500px;
-    min-width:350px;
   }
 
   #affiliations .container {
     display: relative;
-    max-width: 360px;
+    width: 92%;
     justify-content: center;
     background: #F8F8F7 !important;
     border: 5px solid #934B19;
